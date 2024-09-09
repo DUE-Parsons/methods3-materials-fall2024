@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 7 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 7</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/assignment-mae.png);">
+            <a class="source">Mae</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/assignment-lukas.png);">
+            <a class="source">Lukas</a>
+        </div>
+
+        <div class="slide">
+            <h2>spatial joins</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graft-potato-tomato.jpg);">
+            <a class="source" href="http://motherboard.vice.com/read/why-does-the-tomato-potato-plant-exist">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>spatial joins</h2>
+            <p>when you have layers that both have geographic features</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location-output.png);">
+        </div>
+
+        <div class="slide">
+            <p>Works best when you have:</p>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>polygons that don't overlap (such as school districts or census tracts) and</li>
+                <li>points, lines, or smaller polygons that fall within them</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>the field calculator</h2>
+        </div>
+
+        <div class="slide">
+            <h2>the field calculator is a way to create new columns</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-2.png);">
+            <h2>column types</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-2.png);">
+            <ul style="list-style: disc; background-color: rgba(255, 255, 255, 0.8);">
+                <li>numbers: integer, real (decimal numbers)</li>
+                <li>text: string</li>
+                <li>dates: with and without time</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-3.png);">
+            <h2>mathematical expressions</h2>
+            <h2><code>+</code>, <code>-</code>, <code>/</code>, <code>*</code></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-3.png);">
+            <h2>mathematical expressions</h2>
+            <h2><code>+</code>, <code>-</code>, <code>/</code>, <code>*</code></h2>
+            <h2>add, subtract, divide, multiply</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-spatial-join.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>geocoding</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding-data.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding-data.png);">
+            <h2>"I have this spreadsheet I want to map..."</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding-data.png);">
+            <h2>"...it has addresses but doesn't have coordinates"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-newyork.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-unionsquare.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/pelias.gif);">
+            <a class="source" href="http://mapzen.com/pelias">pelias</a>
+        </div>
+
+        <div class="slide">
+            <h2>geocoding is a business</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Google's geocoding terms:</h2>
+            <p>up to 2,500 geocoding requests per day</p>
+        </div>
+
+        <div class="slide">
+            <h2>Google's geocoding terms:</h2>
+            <p>If you're using it online, "The Geocoding API may only be used in conjunction with a Google map..."</p>
+            <p><a class="source" href="https://developers.google.com/maps/documentation/geocoding/#Limits">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_geocoder.png);">
+            <a class="source" href="http://geocoding.geo.census.gov/geocoder/locations/addressbatch?form">Census geocoder</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gpsvisualizer.png);">
+            <a class="source" href="http://www.gpsvisualizer.com/geocoder/">GPS visualizer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tam-geocoder.png);">
+            <a class="source" href="https://geoservices.tamu.edu/">Texas A&amp;M Geoservices</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocod-io.png);">
+            <a class="source" href="https://www.geocod.io/">geocod.io</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocod-io.png);">
+            <h2>(my current preference in the US)</h2>
+            <a class="source" href="https://www.geocod.io/">geocod.io</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-cage.png);">
+            <a class="source" href="https://opencagedata.com/">opencage</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-cage.png);">
+            <h2>worth a look for global data, has a QGIS plugin</h2>
+            <a class="source" href="https://opencagedata.com/">opencage</a>
+        </div>
+
+        <div class="slide">
+            <h2>watch out for the "null island" effect</h2>
+        </div>
+
+        <div class="slide">
+            <h2>sometimes if geocoders really have no clue, they give 0,0</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/null-island.png);">
+            <a class="source" href="https://blogs.loc.gov/maps/2016/04/the-geographical-oddity-of-null-island/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/kidnappings.png);">
+            <a class="source" href="http://fivethirtyeight.com/datalab/mapping-kidnappings-in-nigeria/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/kidnappings.png);">
+            <h2>if geocoders can't find a location, they sometimes default to the middle or capital of the country/state</h2>
+            <a class="source" href="http://fivethirtyeight.com/datalab/mapping-kidnappings-in-nigeria/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>also, since most geocoders have limits you often need to break up your data into smaller files</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-geocoding.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding.png);">
+            <h2>what about going from a point &rarr; name of location?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/twitter-reverse-geocoding.png);">
+            <a class="source" href="https://twitter.com/Sonali_Kohli/status/1175113614249693184">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/instagram-reverse-geocoding.jpg);">
+            <a class="source" href="https://havecamerawilltravel.com/photographer/instagram-location-search/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flickr_reverse_geocoding.png);">
+        </div>
+
+        <div class="slide">
+            <p>"Never mind so-called disputed places (Kashmir, the West Bank, Cyprus, etc.) all neighbourhoods are 'disputed' around the edges..."</p>
+        </div>
+
+        <div class="slide">
+            <p>"... Our experience has been that there are few better ways to pick a fight than to tell someone what neighbourhood they are in (and being wrong)."</p>
+            <p>
+                <a href="http://lists.w3.org/Archives/Public/public-geolocation/2008Jun/0059.html">Aaron Straup Cope</a>
+            </p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cope-post-alpha.jpg);">
+            <a class="source" href="http://www.flickr.com/photos/straup/2884390995/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cope-texas-alpha.png);">
+            <a class="source" href="http://www.flickr.com/photos/straup/2971287541/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/alpha_neighborhoods.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood-3.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood-2.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fruit-belt.png);">
+            <a class="source" href="https://buffalonews.com/2019/03/17/fruit-belt-fights-for-its-name-over-fears-big-tech-is-erasing-it/">source</a>
+        </div>
+
+        <div class="slide">
+          <h2>Felt has a QGIS plugin</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin.png);">
+            <a href="https://felt.com/blog/qgis-plugin-and-felt-api" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-6.png);">
+        </div>
+
+        <div class="slide">
+            <h2>how is a webmap different from a map made in QGIS?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/zoom.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/pan.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/popup.gif);">
+        </div>
+
+        <div class="slide">
+            <h2>let's talk about making features look different based on the zoom level</h2>
+        </div>
+
+        <div class="slide">
+            <h2>or "zoom-dependent styles"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-3.png);">
+            <h2>maybe make polygons slightly transparent as you zoom in</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-4.png);">
+            <h2>maybe make points larger as you zoom in to make them easier to click</h2>
+        </div>
+
+        <div class="slide">
+          <h2>customizing Felt popups</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-0.png);">
+            <h2>by default Felt shows every attribute in the popup</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-0.png);">
+            <h2>you can override this by editing the code behind the map</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-3.png);">
+            <h2>in <code>datasets</code>, after <code>id</code> add <code>keyAttributes</code> and list the attributes you want</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-4.png);">
+            <h2>not sure what your attributes are called? click the Data tab to see all the attributes</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-6.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-6.png);">
+            <h2>you can add <code>attributes</code> to set the display name for your attributes</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Urban Reviewer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urban-reviewer-full.png);">
+            <a href="https://596acres.github.io/urbanreviewer/" target="_blank">urban reviewer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-signs.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-rockaways.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-streetview.png);">
+            <h2>
+                <a href="https://www.google.com/maps/place/Edgemere+Urban+Renewal+Park/@40.595588,-73.776975,3a,75y,172.62h,90t/data=!3m4!1e1!3m2!1sZgWcG17VxRvOezZpdWXGkA!2e0!4m6!1m3!3m2!1s0x0:0xae6844ceae037acd!2sEdgemere+Urban+Renewal+Park!3m1!1s0x0:0xae6844ceae037acd!6m1!1e1" target="_blank">Edgemere Urban Renewal Park</a>
+            </h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs.jpg);">
+            <a class="source" href="http://596acres.org/en/lot/4158370033/" target="_blank">
+                596 Acres
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs-zoom.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs-zoom.jpg);">
+            <h2>call Parks and say "where's our park?"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park.png);">
+            <h2>
+                <a href="https://www.google.com/maps/place/Edgemere+Urban+Renewal+Park/@40.595588,-73.776975,17z/data=!4m6!1m3!3m2!1s0x0:0xae6844ceae037acd!2sEdgemere+Urban+Renewal+Park!3m1!1s0x0:0xae6844ceae037acd" target="_blank">Edgemere Urban Renewal Park</a>
+            </h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/moses.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fitzgerald-urban-renewal.jpg);">
+            <a class="source" href="https://muse.jhu.edu/book/11514">Fitzgerald</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-1968.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-satellite.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-curbed.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://kensinger.blogspot.com/">Nathan Kensinger</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/spura.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://www.nycedc.com/project/seward-park-mixed-use-development-project">NYC EDC</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lincoln-center.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://performingartseducators.org/index.php/fourth-post/">Performing Arts Educators</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cadman-plaza.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://www.panoramio.com/photo/34791344">Panoramio</a>
+        </div>
+
+        <div class="slide">
+            <h2>let's map them!</h2>
+        </div>
+
+        <div class="slide">
+            <h2>we weren't the first to have this idea</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968.png);">
+            <h2>Community Development Program Progress Report (1968)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-map-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-arverne-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984.png);">
+            <h2>Atlas of Urban Renewal (1984)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-manhattan.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-e14th.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-e14th-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-letter.png);">
+            <h2>FOIL</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-paper.jpg);">
+            <h2>FOILed!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-letter-inspection.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bronx-park-south-plan.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bronx-park-south-plan-detail.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/plan-map.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-google-drive.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/crown-heights-google-drive.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/crown-heights-google-drive.png);">
+            <h2>thanks, volunteers!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/disappointed.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel_arrow.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel_arrow2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tax-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tax-map-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-shp.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urban-reviewer-full.png);">
+            <a href="https://596acres.github.io/urbanreviewer/" target="_blank">urban reviewer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/seward-park.png);">
+            <a href="https://596acres.github.io/urbanreviewer/#map=17/40.7154/-73.9864&plan=Seward+Park" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/seward-park-data.png);">
+            <a href="https://github.com/596acres/urbanreviewer/blob/gh-pages/data/geojson/us/ny/nyc/Manhattan/Seward%20Park.geojson" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant3.png);">
+        </div>
+
+
+    </body>
+</html>
