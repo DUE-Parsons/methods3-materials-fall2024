@@ -25,12 +25,12 @@
             <h1>Methods 3</h1>
         </div>
 
-        <div class="slide" style="background-image: url(img/assignment-melissa.png);">
-            <a class="source">Melissa</a>
+        <div class="slide" style="background-image: url(img/assignment-chey.png);">
+            <a class="source">Socheata</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/assignment-beka.png);">
-            <a class="source">Beka</a>
+        <div class="slide" style="background-image: url(img/assignment-soraya.png);">
+            <a class="source">Soraya</a>
         </div>
 
         <div class="slide" style="background-image: url(img/final-projects-canvas.png);">
@@ -39,11 +39,107 @@
         <div class="slide intermission"></div>
 
         <div class="slide" style="background-image: url(img/purple-air.png);">
-            <a href="https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#4.11/40.94/-99.54" class="source">source</a>
+            <a href="https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#4.11/40.94/-99.54" class="source">2023</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/purple-air-2024.png);">
+            <a href="https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#4.11/40.94/-99.54" class="source">2024</a>
         </div>
 
         <div class="slide" style="background-image: url(img/airnow.png);">
-            <a href="https://fire.airnow.gov/?lat=37.80508000000003&lng=-122.27306999999996&zoom=12" class="source">source</a>
+            <a href="https://fire.airnow.gov/?lat=37.80508000000003&lng=-122.27306999999996&zoom=12" class="source">2023</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/airnow-2024.png);">
+            <a href="https://fire.airnow.gov/?lat=37.80508000000003&lng=-122.27306999999996&zoom=12" class="source">2024</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>vector data formats</h2>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+                <li>KML (.kml / .kmz)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+                <li>KML (.kml / .kmz)</li>
+                <li>OSM (.osm)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>CSVs are handy for point data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>these are simply text files</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/csv.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/csv.png);">
+            <h2><em>c</em>omma <em>s</em>eparated <em>v</em>alues</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+        </div>
+
+        <div class="slide">
+            <h2>QGIS doesn't know what projection a CSV is in, so you need to help it out</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>EPSG:4326</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>EPSG:4326 is essentially latitude and longitude</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>if your data is in latitude and longitude, use EPSG:4326</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-csv.html" target="_blank">in-class exercise</a></h2>
         </div>
 
         <div class="slide">
@@ -52,7 +148,12 @@
 
         <div class="slide">
             <h2>working with spreadsheets</h2>
-            <p>for this course you should be able to use Excel, Google Sheets, and/or LibreOffice Calc for what we're doing</p>
+            <p>sometimes a CSV isn't ready to be used in QGIS</p>
+        </div>
+
+        <div class="slide">
+            <h2>working with spreadsheets</h2>
+            <p>for this course you should be able to use R, Excel, Google Sheets, and/or LibreOffice Calc for what we're doing</p>
         </div>
 
         <div class="slide">
@@ -191,7 +292,7 @@
 
         <div class="slide">
             <h2>long vs wide data</h2>
-            <p>don't make this change by hand&mdash;use pivot tables</p>
+            <p>don't make this change by hand&mdash;use pivot tables or R</p>
         </div>
 
         <div class="slide" style="background-image: url(img/pivot-table.png);">
@@ -288,94 +389,6 @@
 
         <div class="slide">
             <h2>keep a document of steps that you are taking, especially if you change or create data</h2>
-        </div>
-
-        <div class="slide intermission"></div>
-
-        <div class="slide">
-            <h2>vector data formats</h2>
-        </div>
-
-        <div class="slide">
-            <h2>QGIS automatically reads many vector formats:</h2>
-        </div>
-
-        <div class="slide">
-            <h2>QGIS automatically reads many vector formats:</h2>
-            <ul style="list-style: disc;">
-                <li>shapefiles (.shp)</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <h2>QGIS automatically reads many vector formats:</h2>
-            <ul style="list-style: disc;">
-                <li>shapefiles (.shp)</li>
-                <li>GeoJSONs (.geojson)</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <h2>QGIS automatically reads many vector formats:</h2>
-            <ul style="list-style: disc;">
-                <li>shapefiles (.shp)</li>
-                <li>GeoJSONs (.geojson)</li>
-                <li>KML (.kml / .kmz)</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <h2>QGIS automatically reads many vector formats:</h2>
-            <ul style="list-style: disc;">
-                <li>shapefiles (.shp)</li>
-                <li>GeoJSONs (.geojson)</li>
-                <li>KML (.kml / .kmz)</li>
-                <li>OSM (.osm)</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <h2>CSVs are handy for point data</h2>
-        </div>
-
-        <div class="slide">
-            <h2>these are simply text files</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/csv.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/csv.png);">
-            <h2><em>c</em>omma <em>s</em>eparated <em>v</em>alues</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-csv-0.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-csv-1.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
-        </div>
-
-        <div class="slide">
-            <h2>QGIS doesn't know what projection a CSV is in, so you need to help it out</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
-            <h2>EPSG:4326</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
-            <h2>EPSG:4326 is essentially latitude and longitude</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
-            <h2>if your data is in latitude and longitude, use EPSG:4326</h2>
-        </div>
-
-        <div class="slide">
-            <h2><a href="inclass-csv.html" target="_blank">in-class exercise</a></h2>
         </div>
 
         <div class="slide intermission"></div>
@@ -607,6 +620,11 @@
         </div>
 
         <div class="slide" style="background-image: url(img/2016-election-counties-gradient.png);">
+            <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-counties-gradient.png);">
+            <h2>what if a choropleth isn't the right form?</h2>
             <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
         </div>
 
