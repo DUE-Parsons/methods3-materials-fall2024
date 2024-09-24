@@ -17,8 +17,8 @@
                 <ol>
                     <li>Download <a href="data/week5data.zip">this class's data</a>.</li>
                     <li>Open the <strong>Borough Boundaries</strong> shapefile in QGIS.</li>
-                    <li>Open the <strong>Public School Locations/2019 - 2020 School Point Locations.geojson</strong> file in QGIS.</li>
-                    <li>Let's select schools in the Bronx two ways:
+                    <li>Open the <strong>Public School Locations</strong> shapefile in QGIS.</li>
+                    <li>Let's select schools in the Bronx a few different ways:
                         <ol>
                             <li>Select by location:
                                 <ol>
@@ -31,7 +31,7 @@
                         <ol>
                             <li>Select by expression:
                                 <ol>
-                                    <li>Use <strong>select by expression</strong> to select school features where the <strong>city</strong> field is <strong>Bronx</strong>.</li>
+                                    <li>Use <strong>select by expression</strong> to select school features where the <strong>Location_C</strong> field starts with <strong>X</strong>. The expression you use should be <code>left("Location_C", 1) = 'X'</code>.</li>
                                 </ol>
                             </li>
                         </ol>
