@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 10 | Methods 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 10</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+          <h2>TODO  HTML and CSS. What's something simple we can use to get things online? GitHub Pages + Jekyll? Canva?</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+    marker-fill: #ff307a;
+    marker-line-color: #FFF;
+    marker-line-width: 0.25;
+    marker-line-opacity: 0.4;
+    marker-width: 2;
+    marker-allow-overlap: true;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+    marker-width: 3;
+    ...
+    [zoom &gt;= 10] {
+        marker-width: 8;
+    }
+    [zoom &gt;= 16] {
+        marker-width: 15;
+    }
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>milestones are due November 8th</h2>
+        </div>
+
+        <div class="slide">
+            <h2>plan on sending us your updates</h2>
+        </div>
+
+        <div class="slide">
+            <h2>using SVG icons with Carto</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nounproject.png);">
+            <a class="source" href="https://nounproject.com">nounproject.com</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nounproject.png);">
+            <h2>find or make an SVG</h2>
+            <a class="source" href="https://nounproject.com">nounproject.com</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-svg-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-svg-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-svg-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-svg-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-svg-cartocss.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>customizing legends and popups</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-legend-html-example.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-legend-html-example.png);">
+          <h2>for example, to add data sources to legends</h2>
+        </div>
+
+        <div class="slide">
+            <h2>or to customize popup text and layout</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-legend-html.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-legend-html.png);">
+            <h2>like last time, we'll need a little code to do this</h2>
+        </div>
+
+        <div class="slide">
+            <h2>HTML</h2>
+        </div>
+
+        <div class="slide">
+            <h2>HTML gives <em>content</em> and <em>structure</em> to web pages</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;
+    &lt;a href="http://data.cityofnewyork.us"&gt;source&lt;/a&gt;
+&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;some text on a web page&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;</code></pre>
+            <p>
+                the paragraph <strong>opening tag</strong>
+            </p>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;</code></pre>
+            <p>
+                the paragraph <strong>opening tag</strong>
+            </p>
+            <p>
+                opening tags always start with
+            </p>
+            <pre class="prettyprint"><code>&lt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;</code></pre>
+            <p>
+                the paragraph <strong>opening tag</strong>
+            </p>
+            <p>
+                opening tags always start with
+            </p>
+            <pre class="prettyprint"><code>&lt;</code></pre>
+            <p>and end with</p>
+            <pre class="prettyprint"><code>&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;/p&gt;</code></pre>
+            <p>the paragraph <strong>closing tag</strong></p>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;/p&gt;</code></pre>
+            <p>the paragraph <strong>closing tag</strong></p>
+            <p>closing tags always start with</p>
+            <pre class="prettyprint"><code>&lt;/</code></pre>
+            <p>and end with</p>
+            <pre class="prettyprint"><code>&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;some text on a web page&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;a href="http://data.cityofnewyork.us"&gt;source&lt;/a&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>HTML in Carto</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-legend-html.png);">
+        </div>
+
+        <div class="slide">
+            <h2>you can add HTML before and after Carto legends</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-popup-html.png);">
+        </div>
+
+        <div class="slide">
+            <h2>in popups, <code>{{}}</code> around a field name will be replaced by the value of that field for the feature you clicked</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-popup-html.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-popup-html.png);">
+            <div style="background-color: rgba(255, 255, 255, 0.8);"><code>{{neighbourhood}}, {{neighbourhood_group}}</code></div>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-popup-html.png);">
+            <div style="background-color: rgba(255, 255, 255, 0.8);">
+                <code>{{neighbourhood}}, {{neighbourhood_group}}</code>
+                <p>becomes</p>
+                <p>SoHo, Manhattan</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h2>you can use this to add links within Carto maps</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;
+    &lt;a href="http://data.cityofnewyork.us"&gt;source&lt;/a&gt;
+&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>and in popups those links can change based on the clicked feature</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;
+    &lt;a href="{{url}}"&gt;learn more&lt;/a&gt;
+&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;
+    &lt;a href="{{url}}"&gt;learn more&lt;/a&gt;
+&lt;/p&gt;</code></pre>
+            <h2>(if there is a field called <code>url</code>)<h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-html.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can add images with HTML</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;img src="http://i.ytimg.com/cat.jpg" /&gt;</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-popup-image.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>CSS</h2>
+        </div>
+
+        <div class="slide">
+            <h2>CSS</h2>
+            <p>makes webpages look nice</p>
+        </div>
+
+        <div class="slide">
+            <h2>CSS</h2>
+            <p>deceptively similar to CartoCSS, but not CartoCSS</p>
+        </div>
+
+        <div class="slide">
+            <h2>CSS is similar to CartoCSS but just for webpages</h2>
+        </div>
+
+        <div class="slide">
+            <h2>CartoCSS</h2>
+            <pre class="prettyprint"><code>#layer {
+    line-color: #ae8;
+    line-width: 0.5;
+    polygon-opacity: 1;
+    polygon-fill: #ae8;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>CSS</h2>
+            <pre class="prettyprint"><code>a {
+    color: blue;
+    font-size: 20px;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p&gt;
+    some text on a web page
+&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;p style="font-size: 20px;"&gt;
+    some text on a web page
+&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/css-properties.png);">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" class="source">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>but you'll probably only use a handful</h2>
+        </div>
+
+        <div class="slide">
+            <h2>font properties</h2>
+            <ul style="list-style: outside disc; padding-left: 50px;">
+                <li>font-family</li>
+                <li>font-size</li>
+                <li>font-weight</li>
+                <li>text-align</li>
+            </ul>
+                ...
+        </div>
+
+        <div class="slide">
+            <h2>color properties</h2>
+            <ul style="list-style: outside disc; padding-left: 50px;">
+                <li>color</li>
+                <li>background-color</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>box properties</h2>
+            <ul style="list-style: outside disc; padding-left: 50px;">
+                <li>border</li>
+                <li>margin</li>
+                <li>padding</li>
+                <li>width</li>
+                <li>height</li>
+            </ul>
+            ...
+        </div>
+
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;div class="CDB-infowindow"&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;div class="CDB-infowindow" style="color: green;"&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>add <em>style=""</em> in an opening tag</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can add as many properties as you want</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;div
+  class="CDB-infowindow"
+  style="color: green;"
+&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>&lt;div
+  class="CDB-infowindow"
+  style="color: green; font-size: 24px;"
+&gt;</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-css.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>if you want to learn a more about HTML and CSS, there are many free resources</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/codecademy.png);">
+            <a class="source" href="https://www.codecademy.com/learn/learn-html">codecademy</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/shayhowe.png);">
+            <a class="source" href="http://learn.shayhowe.com/html-css">learn.shayhowe.com/html-css</a>
+        </div>
+
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>more ways to get data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-0.png);">
+            <a class="source" href="https://www.geoseer.net/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-1.png);">
+            <a class="source" href="https://www.geoseer.net/s.php?q=immigration+australia">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-1.png);">
+            <h2>look for WFS (web feature service) URLs</h2>
+            <a class="source" href="https://www.geoseer.net/s.php?q=immigration+australia">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-2.png);">
+            <a class="source" href="https://www.geoseer.net/rl.php?ql=c1d8f230601b3f44&p=1&q=immigration%20australia#">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-new.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-new-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-new-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-new-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-0.png);">
+          <h2>you could also look for Esri FeatureServer URLs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-1.png);">
+            <a class="source" href="https://egis.fire.ca.gov/arcgis/rest/services/FRAP/FirePerimeters_FS/FeatureServer/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-qgis.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-2.png);">
+        </div>
+
+        <div class="slide">
+            <h2>try it out: search for a WFS or FeatureServer URL you could use</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Getting data from OpenStreetMap</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <a class="source" href="https://www.openstreetmap.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>a free map of the world</h2>
+            <a class="source" href="https://www.openstreetmap.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>kinda like a giant shapefile of the world</h2>
+            <a class="source" href="https://www.openstreetmap.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-lat.png);">
+            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-lat-attribution.png);">
+            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-routing.png);">
+            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/access-map.png);">
+            <a class="source" href="https://www.accessmap.io/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-orientation.png);">
+            <a class="source" href="https://geoffboeing.com/2019/09/urban-street-network-orientation/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-registered-users.png);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Stats">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-db-stats.png);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Stats">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>how do people add to OSM?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-attribute-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tags-union-square.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tags-bmt-broadway.png);">
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+                <li>and most of those columns would be empty (eg 'electrified')</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+                <li>and most of those columns would be empty (eg 'electrified')</li>
+                <li>what you could map would be predetermined</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>key-value pairs</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>leisure=park</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>name=Union Square West</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>we make them up as we go!</p>
+        </div>
+
+        <div class="slide">
+            <h2>folksonomy</h2>
+        </div>
+
+        <div class="slide">
+            <h2>folksonomy</h2>
+            <p>a collaborative system of categorization</p>
+        </div>
+
+        <div class="slide">
+            <h2>you can tag things any way you want</h2>
+        </div>
+
+
+        <div class="slide">
+            <h2>how do you get data out?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nextzen-extracts.png);">
+            <h2>TODO https://download.geofabrik.de/ instead and/or https://www.interline.io/osm/extracts/</h2>
+            <a class="source" href="https://www.nextzen.org/metro-extracts/index.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nextzen-extracts.png);">
+            <h2>if you need a whole city</h2>
+            <a class="source" href="https://www.nextzen.org/metro-extracts/index.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-0.png);">
+            <h2>if you only need a certain feature type</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-1.png);">
+            <h2>not sure what to search for?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>go to <a href="https://openstreetmap.org">openstreetmap.org</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>find something you would like to get data for</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-0.png);">
+            <h2>right-click on it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-3.png);">
+            <h2>use the tags you find</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/google-bus-pinata.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-bus-pinata.png);">
+            <h2>collecting your own data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-bus-pinata.png);">
+            <a href="http://allthingsd.com/20130506/demonstrators-smash-google-bus-pinata-in-san-francisco/">
+                Demonstrators Smash Google Bus Piñata in San Francisco
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-overall.gif);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-zoom.gif);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-bus-foursquare.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers.png);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers2.png);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers2.png);">
+            <p style="background: rgba(255, 255, 255, 0.8);">"We enlisted people to go to stops, measure traffic and count people getting off and on and we hired bike messengers to see where the buses went..."</p>
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers3.png);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers3.png);">
+            <p style="background: rgba(255, 255, 255, 0.8);">"... The cyclists used Field Papers to transcribe the various routes and what they found out, which we recompiled back into a database of trips, stops, companies and frequency."</p>
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-zoom.gif);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-make-atlas.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-print-atlas.png);">
+            <a class="source" href="http://fieldpapers.org/atlas.php?id=fhnp4qks#18/40.73649/-73.99715">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-page.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/walkingpapers-osm.jpg);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Walking_Papers">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-uploaded.png);">
+            <a class="source" href="http://fieldpapers.org/atlas.php?id=ncz5lrfs#17/40.67782/-73.96397">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-uploaded.png);">
+            <ol style="background: rgba(255, 255, 255, 0.8); padding: 25px;">
+                <li>download GeoTIFF</li>
+                <li>open in QGIS</li>
+                <li>create new shapefile and trace</li>
+            </ol>
+        </div>
+
+        <div class="slide">
+            <h2>want to collect data directly on a phone?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fulcrum.png);">
+            <a class="source" href="https://www.fulcrumapp.com/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fulcrum.png);">
+            <h2>costs $$ but can likely get a student deal</h2>
+            <a class="source" href="https://www.fulcrumapp.com/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maps-me.png);">
+            <h2>maps.me</h2>
+            <a class="source" href="https://blog.cartong.org/2017/03/14/gis-data-collection/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maps-me-tutorial.png);">
+            <a class="source" href="https://gfc.ucdavis.edu/guides/mapsme.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qfield.png);">
+            <a class="source" href="https://qfield.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qfield.png);">
+            <h2>basically QGIS on an android device</h2>
+            <a class="source" href="https://qfield.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qfield.png);">
+            <h2>you can load a QGIS project and create/edit data in it</h2>
+            <a class="source" href="https://qfield.org/">source</a>
+        </div>
+
+    </body>
+</html>
