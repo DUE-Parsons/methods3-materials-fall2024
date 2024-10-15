@@ -17,10 +17,7 @@
                 <p>Using the <a href="https://www.huduser.gov/portal/datasets/lihtc/property.html">Low Income Housing Tax Credit</a> (LIHTC) Development points layer, add a heatmap of low-income rental properties created through the LIHTC program in NYC.</p>
                 <ol>
                     <li>If you haven't already, download <a href="data/week8data.zip">today's data</a>.</li>
-                    <li>Add the Low Income Housing Tax Credit (LIHTC) csv to QGIS and map the points using longitude (x field) and latitude (y field).</li>
-                    <li>Use the Field Calculator to create a new field that fixes <strong>li_units</strong> to be numeric. Make the type integer and use the expression <code>if("li_units" = 'NA', null, to_int("li_units"))</code>. That is, if <strong>li_units</strong> has "NA" in it set the value to <strong>null</strong> (empty), else convert it to an integer.
-                    </li>
-                    <li>Toggle editing off to save your changes.</li>
+                    <li>Add the Low Income Housing Tax Credit (LIHTC) csv to QGIS and map the points using longitude (x field) and latitude (y field). Ensure <strong>li_units</strong> is added as an integer.</li>
                     <li>Add the Borough Boundaries shapefile.</li>
                     <li>Use Select by Location to select the LIHTC buildings in New York City.</li>
                     <li>Export the LIHTC Listings data with 2263 as the CRS.</li>
